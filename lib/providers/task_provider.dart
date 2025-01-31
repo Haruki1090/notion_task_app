@@ -1,11 +1,12 @@
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../models/task.dart';
 import '../services/notion_service.dart';
 
 final notionServiceProvider = Provider<NotionService>((ref) {
-  const integrationToken = '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';
-  const databaseId = '18cd029c9a7d8099bbe9f2ffd86561ec';
+  var integrationToken = dotenv.env['INTEGRATION_TOKEN']!;
+  var databaseId = dotenv.env['DATABASE_ID']!;
 
   return NotionService(
     integrationToken: integrationToken,
