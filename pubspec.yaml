@@ -7,6 +7,9 @@ version: 1.0.0+1
 environment:
   sdk: ^3.6.1
 
+assets:
+  - .env
+
 dependencies:
   flutter:
     sdk: flutter
@@ -14,6 +17,7 @@ dependencies:
   http: ^1.3.0
   flutter_riverpod:
   freezed_annotation:
+  flutter_dotenv: ^5.2.1
 
 dev_dependencies:
   flutter_test:
