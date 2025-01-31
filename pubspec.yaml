@@ -1,0 +1,26 @@
+name: notion_task_app
+description: "A notion_task_app project"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  http:
+  flutter_riverpod:
+  freezed_annotation:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner:
+  freezed:
+
+flutter:
+  uses-material-design: true
