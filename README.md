@@ -1,17 +1,18 @@
 # notion_task_app
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# notion_task_app
+## Directory Structure
+```
+lib/
+ ┣ models/
+ ┃   ┗ task.dart          // タスクオブジェクトのモデル
+ ┣ services/
+ ┃   ┗ notion_service.dart // Notion APIとのやりとりを行うサービスクラス
+ ┣ providers/
+ ┃   ┗ task_provider.dart  // タスク状態の管理 (RiverpodやProviderなど)
+ ┣ ui/
+ ┃   ┣ screens/
+ ┃   ┃   ┗ task_list_screen.dart // タスク一覧表示画面
+ ┃   ┃   ┗ task_detail_screen.dart // タスク詳細・編集画面
+ ┃   ┗ widgets/
+ ┗ main.dart
+```
