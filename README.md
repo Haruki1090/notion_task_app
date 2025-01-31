@@ -3,16 +3,19 @@
 ## Directory Structure
 ```
 lib/
- ┣ models/
- ┃   ┗ task.dart          // タスクオブジェクトのモデル
- ┣ services/
- ┃   ┗ notion_service.dart // Notion APIとのやりとりを行うサービスクラス
- ┣ providers/
- ┃   ┗ task_provider.dart  // タスク状態の管理 (RiverpodやProviderなど)
- ┣ ui/
- ┃   ┣ screens/
- ┃   ┃   ┗ task_list_screen.dart // タスク一覧表示画面
- ┃   ┃   ┗ task_detail_screen.dart // タスク詳細・編集画面
- ┃   ┗ widgets/
- ┗ main.dart
+│── models/
+│   │── task.dart
+│   │── task.freezed.dart
+│   │── task.g.dart
+│── providers/
+│   │── task_provider.dart
+│── services/
+│   │── notion_service.dart
+│── ui/
+│   │── screens/
+│   │   │── task_detail_screen.dart
+│   │   │── task_list_screen.dart
+│   │── widgets/
+│── .env
+│── main.dart
 ```
